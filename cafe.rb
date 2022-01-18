@@ -21,4 +21,7 @@ class Cafe
         @order.add_item(item, quantity)
     end
 
+    def welcome
+       puts "Welcome to #{@name}!" 
+    end
 end

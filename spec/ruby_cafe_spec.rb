@@ -104,4 +104,13 @@ describe Cafe do
         cafe.add_to_order("tea", quantity)
         expect(cafe.order.order_items.length).to be(2)
     end
+
+    it 'should define a welcome method' do
+        name = "My cafe"
+        menu_items = {latte: 4.00, tea: 2.00}
+        cafe = Cafe.new(name, menu_items)
+        expect(cafe.welcome).to eq(nil)
+            # checks 'welcome' method exists
+            # checks method returns a nil value as method only prints to console so nothing should be returned.
+    end
 end

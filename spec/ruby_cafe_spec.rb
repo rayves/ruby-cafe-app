@@ -113,4 +113,11 @@ describe Cafe do
             # checks 'welcome' method exists
             # checks method returns a nil value as method only prints to console so nothing should be returned.
     end
+
+    it 'should define a print_menu method' do
+        name = "My cafe"
+        menu_items = {latte: 4.00, tea: 2.00}
+        cafe = Cafe.new(name, menu_items)
+        expect(cafe.print_menu).to eq(nil)
+    end
 end

@@ -24,4 +24,17 @@ class Cafe
     def welcome
        puts "Welcome to #{@name}!" 
     end
+
+    def print_menu
+        @menu.display
+    end
+
 end
+
+# # Test
+# name = "My cafe"
+# menu_items = {latte: 4.00, tea: 2.00}
+# cafe = Cafe.new(name, menu_items)
+
+# cafe.welcome
+# cafe.print_menu

@@ -15,4 +15,12 @@ class Order
         # add new key equaled to the quantity
     end
 
+    def display
+        puts
+        puts "Thank-you! Here is your order: "
+        puts "-------------------------------"
+        @order_items.each { |item, qty| puts "x#{qty} #{item}"}
+        puts
+    end
+
 end
